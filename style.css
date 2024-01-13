@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+html{
+    line-height: 1.5;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+header{
+    font-size: 14px;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    border-bottom: solid 1px rgba(255, 255, 255, .20);
+}
+
+img {
+    margin: 5px 10px 5px 95px;
+    display: inline;
+    width: 24px;
+    height: 24px;
+}
+.logo-text{
+    font-weight: 600;
+    margin-right: 55px;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links .nav-items{
+    margin-right: 40px;
+    display: inline;
+}
+.btn{
+    position: absolute;
+    right: 55px;
+    color: #000;
+    font-weight: 600;
+    border: solid 2px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 4px 16px;
+}
+#hamburger, label[for="hamburger"]{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    label[for="hamburger"]{
+        left: 20px;
+        position: absolute;
+        display: block;
+        font-size: 25px;
+    }
+    header .nav-links{
+        display: none;
+    }
+    header input:checked ~ .nav-links{
+        display:block;
+        position: absolute;
+        left: 0;
+        top:70px;
+        padding: 0 0 40 30px;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-links  .nav-items{
+        cursor: pointer;
+        color: rgba(255, 255, 255, .87);
+        margin-top: 25px;
+        margin-left: 20px;
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+}
+.main{
+    text-align: center;
+    max-width: 560px;
+   margin: 120px auto;
+}
+.main-heading{
+    line-height: 1;
+    font-weight: 700;
+    font-size: 60px;
+}
+.main .main-heading #ts{
+    background: linear-gradient(to right,#ffa28e, #eb6ff7, #7aa5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main p{
+    color: rgba(255, 255, 255, .60);
+    padding: 0 10px;
+    font-size: 18px;
+    margin: 40px 40px 50px 40px;
+}
+.main .btn1, .btn2{
+    font-size: 13px;
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin:8px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.main .btn1{
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+}
+.main .btn2{
+    background-color: transparent;
+    border: solid .3px rgba(255, 255, 255, .25);
+}
+.main .btn2:hover{
+    background-color: rgba(255, 255, 255, .17);
+}
+
+.main-container{
+ text-align: center;
+}
+.main-container .tw1{
+    font-size:20px;
+}
+.main-container .tw2{
+    color:rgba(255, 255, 255, .40);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-top: 50px;
+}
+
+.container .box{
+    display: block;
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 15px 10px;
+    background-color: hsla(0,0%,9%,.4);
+    border: solid 1px #ffffff2b;
+    box-shadow: inset 0 10px 30px -20px #ffffff1f;
+}
+.container .box:hover{
+    cursor: pointer;
+    border: solid 1px #ffffff3d;
+}
+.container .title{
+    background-color: transparent;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.container .title-description{
+    background-color: transparent;
+    padding: 5px 0;
+    color: rgba(255, 255, 255, .40);
+}
+
+.second-section{
+    margin: 0 auto;
+}
+
+.second-section *{
+    background: transparent;
+}
+.second-section .box{
+    font-size: 18px;
+    margin: 40px auto;
+    width: fit-content;
+    padding: 20px 20px;
+    background-color: hsla(0,0%,9%,.4);
+    border-radius: 5px;
+    border: solid 1px #ffffff2b;
+    box-shadow: inset 0 10px 30px -20px #ffffff1f;
+}
+
+
+.second-section, .third .heading{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top:50px;
+}
+.second-section .price1{
+    font-size: 60px;
+    font-weight: 700;
+    display: inline;
+}
+
+.second-section .price2{
+    text-decoration: line-through;
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+}
+.second-section #list{
+    font-weight: normal;
+    margin-top: 10px;
+    list-style: none;
+    color: rgba(255, 255, 255, .10);
+}
+.second-section .listitems{
+    display: flex;
+    padding-right:5px ;
+    margin-top: 5px;
+}
+.second-section svg{
+    margin-right: 5px;
+    width: 20px;
+}
+.second-section .btn3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.third .heading{
+    margin-bottom: 60px;
+}
+.third .box{
+    margin: 0 auto;
+    cursor: pointer;
+   max-width: 500px;
+}
+.third .box label{
+    cursor: pointer;
+    float: right;
+}
+.third .question{
+    margin: 5px 0 15px 0;
+    display: inline;
+}
+.third input[name="plus"]{
+    visibility: hidden;
+}
+.third input:checked ~ .content{
+    display: block;
+}
+.third .content{
+    color: rgba(255, 255, 255, .40);
+    margin: 25px 0;
+    display: none;
+}
+hr{
+    margin: 15px 0;
+    border-color: rgba(255, 255, 255, .40);
+}
+footer{
+    margin-top: 130px;
+    font-size: 14px;
+    border-top: solid 1px rgba(255, 255, 255, .20);
+   padding: 40px 100px ;
+}
